@@ -2,9 +2,8 @@
 
 OS Theory Assignment - Q.4
 
-Author: **1905831, Junaid H Rahim**
-
-Submitted to **Dr. Amulya Ratna Swain** 
+* Author: **1905831, Junaid H Rahim**
+* Submitted to **Dr. Amulya Ratna Swain** 
 
 ### Directories
 
