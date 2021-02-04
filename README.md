@@ -16,7 +16,6 @@ Submitted to **Dr. Amulya Ratna Swain**
 │   └── scheduler.h
 ├── main.cpp
 ├── Makefile
-├── mlfq-scheduler
 ├── README.md
 └── src
     ├── cpu.cpp
