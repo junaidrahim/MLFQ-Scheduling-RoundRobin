@@ -2,7 +2,7 @@
 
 OS Theory Assignment - Q.4
 
-Written by **1905831, Junaid H Rahim**
+Author: **1905831, Junaid H Rahim**
 
 Submitted to **Dr. Amulya Ratna Swain** 
 
