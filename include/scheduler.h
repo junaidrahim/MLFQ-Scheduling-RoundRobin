@@ -1,27 +1,22 @@
 #pragma once
 
-#include "process.hpp"
 #include "cpu.h"
+#include "process.hpp"
 
-#include <queue>
-#include <vector>
 #include <array>
 #include <memory>
+#include <queue>
+#include <vector>
 
 struct Queue {
 	int quantum_time;
 	std::queue<std::shared_ptr<Process>> q;
 
 	Queue() = default;
-
-	Queue(int qtime) {
-		this->quantum_time = qtime;
-	}
+	Queue(int qtime) { this->quantum_time = qtime; }
 };
-
 struct Scheduler {
 	const int MAX_PROC_CPU_TIME = 20;
-
 	const std::array<int, 4> quantum_times = {3, 5, 7, 9};
 	std::array<Queue, 4> queues;
 

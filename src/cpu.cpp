@@ -7,7 +7,6 @@ void CPU::load(Process &p, int quantum_time) {
 		if (p.ready_to_execute) {
 			// reduce the particular burst by quantum time
 			// if cpu burst complete move it for io
-
 			for (int i = 0; i < quantum_time; i++) {
 				p.cpu_io_bursts[p.burst_index] -= 1;
 				p.total_exec_time += 1;
@@ -39,7 +38,7 @@ void CPU::tick() {
 			p->increment_burst_index();
 			return true;
 		}
-		
+
 		return false;
 	});
 

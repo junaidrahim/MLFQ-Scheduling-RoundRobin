@@ -22,7 +22,6 @@ struct Process {
 
 	Process(int p) {
 		this->pid = p;
-
 		for (int i = 0; i < BURST_ARR_SIZE; i++)
 			cpu_io_bursts[i] = 1 + rand() % MAX_BURST_DURATION;
 	}
@@ -38,7 +37,6 @@ struct Process {
 		std::for_each(cpu_io_bursts.begin(), cpu_io_bursts.end(), [&](int x) { std::cout << x << ' '; });
 
 		std::cout << "] | ";
-
 		std::cout << "Execution Time: " << this->total_exec_time << std::endl;
 	}
 };

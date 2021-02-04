@@ -128,7 +128,6 @@ void Scheduler::print_queue(int idx) {
 
 void Scheduler::print_completed() {
 	size_t s = completed.size();
-
 	std::cout << "Processes that Completed Execution: " << std::endl;
 
 	for (int i = 0; i < s; i++) {
