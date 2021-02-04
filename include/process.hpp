@@ -8,7 +8,7 @@
 
 constexpr int MAX_ARRIVAL_TIME = 15;
 constexpr int BURST_ARR_SIZE = 8;
-constexpr int MAX_BURST_DURATION = 30;
+constexpr int MAX_BURST_DURATION = 20;
 
 struct Process {
 	int pid;

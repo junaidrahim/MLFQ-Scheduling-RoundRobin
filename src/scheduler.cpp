@@ -27,6 +27,9 @@ void Scheduler::run() {
 
 					this->queues[0].q.push(p);
 				} else {
+					std::cout << "Moving ";
+					p->print();
+					std::cout << "to Queue 1" << std::endl;
 					this->move_process(p, 1);
 				}
 			} else {
@@ -47,6 +50,9 @@ void Scheduler::run() {
 
 					this->queues[1].q.push(p);
 				} else {
+					std::cout << "Moving ";
+					p->print();
+					std::cout << "to Queue 2" << std::endl;
 					this->move_process(p, 2);
 				}
 			} else {
@@ -67,6 +73,9 @@ void Scheduler::run() {
 
 					this->queues[2].q.push(p);
 				} else {
+					std::cout << "Moving ";
+					p->print();
+					std::cout << "to Queue 3" << std::endl;
 					this->move_process(p, 3);
 				}
 			} else {
@@ -87,6 +96,9 @@ void Scheduler::run() {
 
 					this->queues[3].q.push(p);
 				} else {
+					std::cout << "Moving ";
+					p->print();
+					std::cout << "to Queue 4" << std::endl;
 					this->move_process(p, 0);
 				}
 			} else {
@@ -116,10 +128,10 @@ void Scheduler::print_queue(int idx) {
 
 void Scheduler::print_completed() {
 	size_t s = completed.size();
-	
+
 	std::cout << "Processes that Completed Execution: " << std::endl;
 
-	for(int i=0; i<s; i++) {
+	for (int i = 0; i < s; i++) {
 		completed[i]->print();
 	}
 }
